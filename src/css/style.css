@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+body {
+  background-color: #ba5f2e;
+}
+.navbar {
+  text-align: right;
+  background-color: #000;
+  padding: 12px 5px;
+  font-size: 1.5em;
+}
+.navbar li {
+  display: inline;
+  padding-right: 15px;
+  color: #ba5f2e;
+}
+.navbar li:hover {
+  font-weight: bold;
+  color: #dc9772;
+  cursor: crosshair;
+}
+.titleList {
+  font-size: 5em;
+  font-weight: 500;
+  padding: 10px 0 0 20px;
+}
+.titleList .nameBold {
+  font-weight: 900;
+}
