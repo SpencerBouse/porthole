@@ -1,6 +1,10 @@
 import React from 'react';
 
 import NavBar from './NavBar'
+import ProjectsGroup from './ProjectsGroup'
+import Contact from './Contact'
+
+import face from '../images/spencer.jpg'
 
 class App extends React.Component{
   render(){
@@ -13,6 +17,9 @@ class App extends React.Component{
           <li className='nameBold'>FRONT-END</li>
           <li className='nameBold'>DEVELOPER.</li>
         </ul>
+        <img className='face' src={face} alt='My Face!'/>
+        <ProjectsGroup></ProjectsGroup>
+        <Contact></Contact>
       </div>
     )
   }

@@ -28,10 +28,73 @@ body {
   cursor: crosshair;
 }
 .titleList {
+  height: 70vh;
   font-size: 5em;
   font-weight: 500;
   padding: 10px 0 0 20px;
 }
 .titleList .nameBold {
   font-weight: 900;
+}
+.face {
+  position: absolute;
+  width: 350px;
+  border-radius: 50%;
+  right: 10%;
+  top: 5em;
+  z-index: -1;
+}
+.ProjectsDiv {
+  background-color: #000;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.ProjectsDiv h1 {
+  font-size: 2em;
+  color: #ba5f2e;
+  padding-bottom: 30px;
+  padding-left: 15px;
+}
+.project {
+  color: #ba5f2e;
+  text-align: center;
+}
+.project img {
+  width: 35%;
+  margin-bottom: 35px;
+  border: 2px solid #ba5f2e;
+}
+.project h1 {
+  font-size: 1.5em;
+  padding-bottom: 7px;
+}
+.project p {
+  padding-bottom: 15px;
+}
+.contactDiv h1 {
+  font-size: 2em;
+  padding: 15px 0px 15px 15px;
+}
+.contactDiv ul {
+  list-style-type: none;
+  padding-bottom: 45px;
+}
+.contactDiv .contact {
+  padding-left: 55px;
+}
+.contactDiv .contact svg {
+  font-size: 1.5em;
+  display: inline-block;
+}
+.contactDiv .contact li {
+  display: inline-block;
+  font-size: 1.5em;
+  padding-left: 10px;
+}
+.contactDiv .contact li a {
+  color: #000;
+  text-decoration: none;
+}
+.contactDiv .contact li a:hover {
+  text-decoration: underline;
 }
