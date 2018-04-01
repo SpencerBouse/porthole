@@ -14,6 +14,8 @@ body
 
 //navigation bar styling
 .navbar
+  width 100%
+  position fixed
   text-align right
   background-color black
   padding 12px 5px
@@ -23,26 +25,30 @@ body
     padding-right 15px
     color #BA5F2E
   li:hover
-    font-weight bold
-    color lighten(#BA5F2E, 20)
     cursor pointer
+  a
+    color #BA5F2E
+    text-decoration none
+  a:hover
+    color lighten(#BA5F2E, 20)
 
 //my name styling!
 .titleList
-  height 70vh
+  list-style-type none
+  height 80vh
   font-size 5em
   font-weight 500
-  padding: 10px 0 0 20px
+  padding 60px 0 0 65px
   .nameBold
     font-weight 900
 
-//my face! UwU
+//my face! ¯\_(ツ)_/¯
 .face
   position absolute
-  width 350px
+  width 25%
   border-radius 50%
   right 10%
-  top 5em
+  top 18em
   z-index -1
 
 //Projects
@@ -78,18 +84,37 @@ body
     list-style-type none
     padding-bottom 45px
   .contact
-    padding-left 55px
-    svg
-      font-size 1.5em
-      display inline-block
-    li
-      display inline-block
-      font-size 1.5em
-      padding-left 10px
-      a
-        color black
-        text-decoration none
+    display inline-block
+    text-align center
+    width 30%
+    *
+      font-size 2em
+      color black
+      text-decoration none
+      display block
+      margin auto
   .contact:hover
     font-weight bold
     color lighten(#BA5F2E, 20)
     cursor pointer
+    *
+      font-weight bold
+      color lighten(#BA5F2E, 20)
+      cursor pointer
+
+//modal
+.modalImg
+  display block
+  margin auto
+  width 100%
+  margin-top 33px
+
+.modalClose
+  float right
+  font-size 2em
+  cursor pointer
+  position fixed
+  right 60px
+
+.ReactModal__Body--open
+  overflow-y hidden

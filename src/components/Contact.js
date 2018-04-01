@@ -9,19 +9,19 @@ class Contact extends React.Component{
   render(){
     return(
       <div className='contactDiv'>
-        <h1>Contact!</h1>
+        <h1>CONTACT</h1>
         <ul className='contactlist'>
           <div className='contact'>
             <FontAwesomeIcon icon={faLinkedin}/>
-            <li className='contactLink'><a href='https://www.linkedin.com/in/spencer-bouse-134254139/'>Linkedin</a></li>
+            <a href='https://www.linkedin.com/in/spencer-bouse-134254139/'>Linkedin</a>
           </div>
           <div className='contact'>
             <FontAwesomeIcon icon={faGithub}/>
-            <li className='contactLink'><a href='https://github.com/SpencerBouse'>GitHub</a></li>
+            <a href='https://github.com/SpencerBouse'>GitHub</a>
           </div>
           <div className='contact'>
             <FontAwesomeIcon icon={faEnvelope}/>
-            <li>Email</li>
+            <a>Email</a>
           </div>
         </ul>
       </div>

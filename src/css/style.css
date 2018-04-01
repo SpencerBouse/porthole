@@ -12,6 +12,8 @@ body {
   background-color: #ba5f2e;
 }
 .navbar {
+  width: 100%;
+  position: fixed;
   text-align: right;
   background-color: #000;
   padding: 12px 5px;
@@ -23,25 +25,31 @@ body {
   color: #ba5f2e;
 }
 .navbar li:hover {
-  font-weight: bold;
+  cursor: pointer;
+}
+.navbar a {
+  color: #ba5f2e;
+  text-decoration: none;
+}
+.navbar a:hover {
   color: #dc9772;
-  cursor: crosshair;
 }
 .titleList {
-  height: 70vh;
+  list-style-type: none;
+  height: 80vh;
   font-size: 5em;
   font-weight: 500;
-  padding: 10px 0 0 20px;
+  padding: 60px 0 0 65px;
 }
 .titleList .nameBold {
   font-weight: 900;
 }
 .face {
   position: absolute;
-  width: 350px;
+  width: 25%;
   border-radius: 50%;
   right: 10%;
-  top: 5em;
+  top: 18em;
   z-index: -1;
 }
 .ProjectsDiv {
@@ -80,21 +88,40 @@ body {
   padding-bottom: 45px;
 }
 .contactDiv .contact {
-  padding-left: 55px;
-}
-.contactDiv .contact svg {
-  font-size: 1.5em;
   display: inline-block;
+  text-align: center;
+  width: 30%;
 }
-.contactDiv .contact li {
-  display: inline-block;
-  font-size: 1.5em;
-  padding-left: 10px;
-}
-.contactDiv .contact li a {
+.contactDiv .contact * {
+  font-size: 2em;
   color: #000;
   text-decoration: none;
+  display: block;
+  margin: auto;
 }
-.contactDiv .contact li a:hover {
-  text-decoration: underline;
+.contactDiv .contact:hover {
+  font-weight: bold;
+  color: #dc9772;
+  cursor: pointer;
+}
+.contactDiv .contact:hover * {
+  font-weight: bold;
+  color: #dc9772;
+  cursor: pointer;
+}
+.modalImg {
+  display: block;
+  margin: auto;
+  width: 100%;
+  margin-top: 33px;
+}
+.modalClose {
+  float: right;
+  font-size: 2em;
+  cursor: pointer;
+  position: fixed;
+  right: 60px;
+}
+.ReactModal__Body--open {
+  overflow-y: hidden;
 }
