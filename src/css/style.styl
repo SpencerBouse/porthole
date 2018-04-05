@@ -44,6 +44,7 @@ body
 
 //my face! ¯\_(ツ)_/¯
 .face
+  display none
   position absolute
   width 25%
   border-radius 50%
@@ -72,21 +73,27 @@ body
   h1
     font-size 1.5em
     padding-bottom 7px
+    a
+      text-decoration none
+      color #BA5F2E
   p
     padding-bottom 15px
+  h1:hover
+    text-decoration underline
 
 //Contact
 .contactDiv
   h1
     font-size 2em
-    padding 15px 0px 15px 15px
+    padding 15px 0px 2px 15px
   ul
     list-style-type none
     padding-bottom 45px
   .contact
     display inline-block
     text-align center
-    width 30%
+    width 33%
+    text-decoration none
     *
       font-size 2em
       color black
@@ -101,6 +108,10 @@ body
       font-weight bold
       color lighten(#BA5F2E, 20)
       cursor pointer
+
+.phone
+  margin-left 15px
+  margin-bottom 20px
 
 //modal
 .modalImg
@@ -118,3 +129,7 @@ body
 
 .ReactModal__Body--open
   overflow-y hidden
+
+@media (min-width: 768px)
+  .face
+    display block !important

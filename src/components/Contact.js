@@ -10,6 +10,10 @@ class Contact extends React.Component{
     return(
       <div className='contactDiv'>
         <h1>CONTACT</h1>
+        <div className='phone'>
+          <p>Bouse.spencer@gmail.com</p>
+          <p>513-578-2139</p>
+        </div>
         <ul className='contactlist'>
           <div className='contact'>
             <FontAwesomeIcon icon={faLinkedin}/>
@@ -19,10 +23,10 @@ class Contact extends React.Component{
             <FontAwesomeIcon icon={faGithub}/>
             <a href='https://github.com/SpencerBouse'>GitHub</a>
           </div>
-          <div className='contact'>
+          <a className='contact' href="mailto:bouse.spencer@gmail.com?Subject=Hello">
             <FontAwesomeIcon icon={faEnvelope}/>
             <a>Email</a>
-          </div>
+          </a>
         </ul>
       </div>
     )

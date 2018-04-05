@@ -45,6 +45,7 @@ body {
   font-weight: 900;
 }
 .face {
+  display: none;
   position: absolute;
   width: 25%;
   border-radius: 50%;
@@ -76,12 +77,19 @@ body {
   font-size: 1.5em;
   padding-bottom: 7px;
 }
+.project h1 a {
+  text-decoration: none;
+  color: #ba5f2e;
+}
 .project p {
   padding-bottom: 15px;
 }
+.project h1:hover {
+  text-decoration: underline;
+}
 .contactDiv h1 {
   font-size: 2em;
-  padding: 15px 0px 15px 15px;
+  padding: 15px 0px 2px 15px;
 }
 .contactDiv ul {
   list-style-type: none;
@@ -90,7 +98,8 @@ body {
 .contactDiv .contact {
   display: inline-block;
   text-align: center;
-  width: 30%;
+  width: 33%;
+  text-decoration: none;
 }
 .contactDiv .contact * {
   font-size: 2em;
@@ -109,6 +118,10 @@ body {
   color: #dc9772;
   cursor: pointer;
 }
+.phone {
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
 .modalImg {
   display: block;
   margin: auto;
@@ -124,4 +137,9 @@ body {
 }
 .ReactModal__Body--open {
   overflow-y: hidden;
+}
+@media (min-width: 768px) {
+  .face {
+    display: block !important;
+  }
 }

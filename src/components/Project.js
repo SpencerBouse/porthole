@@ -34,7 +34,7 @@ class Project extends React.Component{
 
     return (
       <div className="project" key={key}>
-        <h1 href='{project.link}'>{project.name}</h1>
+        <h1><a href={project.link}>{project.name}</a></h1>
         <p>{project.desc}</p>
         <img src={project.image} alt='project' onClick={this.openModal.bind(this, project.image)}/>
       </div>
