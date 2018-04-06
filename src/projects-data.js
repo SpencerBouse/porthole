@@ -8,7 +8,7 @@ const projects = {
     name: 'Quest Finder',
     image: proj1,
     desc: 'Quest Finder is a Dungeon and Dragons webapp where Dungeon Masters are matched with Dungeons and Dragons players. Made with AngularJs.',
-    link: 'https://github.com/SpencerBouse/Quest-Finder'
+    link: 'https://questfinder-3ebe4.firebaseapp.com'
   },
 
   proj2:{
